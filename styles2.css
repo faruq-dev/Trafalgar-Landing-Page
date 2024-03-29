@@ -1,0 +1,334 @@
+@media screen and (max-width: 600px) {
+  .container {
+    margin: 0 20px;
+  }
+
+  .wrapper {
+    background-image: url(./Images/dot-element.svg),
+      url(./Images/service-bg-vector.svg), url(./Images/dot-element-2.svg),
+      url(./Images/dot-element-2.svg), url(./Images/blog-bg-Vector.svg),
+      url(./Images/dot-element-2.svg);
+    background-repeat: no-repeat;
+    background-position-y: 1%, 15%, 25.2%, 48.5%, 72.5%, 80.9%;
+    background-position-x: 0%, 0%, 103%, 120%, 100%, 95%;
+  }
+
+  .menu {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f3f3;
+    width: 80%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 2500;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .menu li {
+    margin-top: 10px;
+  }
+
+  .menu li a {
+    padding: 10px;
+  }
+
+  .open-menu,
+  .close-menu {
+    display: block;
+  }
+
+  #check:checked ~ .menu {
+    right: 0;
+    transition: all 0.4s ease-in-out;
+  }
+
+  /* Banner Image Section */
+  .div-container {
+    flex-direction: column-reverse;
+    align-items: baseline;
+    row-gap: 30px;
+    margin: 30px 0 150px 0;
+  }
+
+  .banner-content {
+    width: 100%;
+  }
+
+  .banner-img {
+    width: 100%;
+  }
+
+  .banner-title {
+    font-size: 38px;
+  }
+
+  .banner-para {
+    font-size: 18px;
+    line-break: anywhere;
+  }
+
+  .banner-para br {
+    display: none;
+  }
+
+  /* ------
+  Service Area
+  ------- */
+  .service {
+    margin-bottom: 150px;
+  }
+
+  .service-cards,
+  .blog-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* Leading Healthcare ++ Download Apps Section */
+  .leading-healthcare,
+  .download-apps {
+    flex-direction: column;
+    margin-bottom: 150px;
+  }
+
+  .section-img {
+    width: 100%;
+  }
+
+  .section-img img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .section-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Testimonial Section */
+  .testimonial {
+    margin-bottom: 150px;
+  }
+
+  .testimonial-container {
+    padding: 64px 16px;
+  }
+
+  .testimonial-container h1 {
+    font-size: 26px;
+    line-height: 45px;
+  }
+
+  .customer-feedback {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .customer-info {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .feedback-text p {
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  /* -------- Blog ------- */
+  .latest-blog {
+    margin-bottom: 150px;
+  }
+
+  /* ---
+  Footer
+  ---------------- */
+  .footer-d-flex {
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .written-content,
+  .copyright {
+    width: 100%;
+  }
+
+  .all-footer-links {
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 960px) {
+  .wrapper {
+    background-image: url(./Images/dot-element.svg),
+      url(./Images/service-bg-vector.svg), url(./Images/dot-element-2.svg),
+      url(./Images/dot-element-2.svg), url(./Images/blog-bg-Vector.svg), url(./Images/dot-element-2.svg);
+    background-repeat: no-repeat;
+    background-position-y: 3%, 15.5%, 26.2%, 45%, 73%, 90%;
+    background-position-x: 0%, 0%, 106%, 108%, 100%, 90%;
+  }
+
+  .container {
+    margin: 0 25px;
+  }
+
+  .div-container {
+    margin: 30px 0 150px 0;
+  }
+
+  .banner-img {
+    width: 50%;
+    flex-shrink: 1;
+  }
+
+  .banner-content {
+    flex-shrink: 1;
+    width: 45%;
+  }
+
+  .banner-para br {
+    display: none;
+  }
+
+  /* ---------
+  Service Section
+  ---------- */
+  .service {
+    margin-bottom: 150px;
+  }
+
+  .service > p br {
+    display: none;
+  }
+
+  .service-cards,
+  .blog-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* ------
+  Leading Healthcare + Download app Section
+  ----------
+  ---- */
+  .leading-healthcare,
+  .download-apps {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 150px;
+  }
+
+  .section-img {
+    width: 50%;
+    flex-shrink: 1;
+  }
+
+  .section-content {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* --------
+  Testimonial Section
+  --------- */
+  .testimonial {
+    margin-bottom: 150px;
+  }
+
+  .testimonial-container {
+    padding: 64px 16px;
+  }
+
+  .customer-feedback {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .customer-info {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .feedback-text p {
+    width: 70%;
+    font-size: 16px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  /* ------
+  ----
+  Blog Section
+  --------
+  -------------
+  -------------------
+  ------------ */
+  #special-blog-card {
+    transform: translate(55%);
+  }
+
+  /* Footer Section */
+  .footer-d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 50px;
+  }
+
+  .written-content,
+  .copyright {
+    width: 500px;
+    text-align: center;
+  }
+
+  .footer-logo {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 961px) and (max-width: 1400px) {
+  .container {
+    margin: 0 100px;
+  }
+
+  .banner-img {
+    width: 50%;
+    flex-shrink: 1;
+  }
+
+  .banner-content {
+    flex-shrink: 1;
+    width: 45%;
+  }
+
+    /* ------
+  Leading Healthcare + Download app Section
+  ----------
+  ---- */
+  .leading-healthcare,
+  .download-apps {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 192px;
+  }
+
+  .section-img {
+    width: 50%;
+    flex-shrink: 1;
+  }
+
+  .section-content {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+  }
+}
